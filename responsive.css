@@ -3,11 +3,12 @@
 /*=======================================
 Phones and larger
 =====================================*/
-
+/*=========Background colors for testing==============*/
 @media screen and (min-width: 727px) {
 	body {
 		background-color: green;
 	}
+/*============= Top Area ==========*/ 	
 	#topArea {
 	  margin: 0 0;
 	  margin-right: 7%;
@@ -16,15 +17,18 @@ Phones and larger
 	  float: right;
 	  padding: 0;
 	  margin-top: 20px;
-	}
+	  }
+/*============= Icon Area ==========*/	
 	.iconStyle {
 	  width: 25%;
-	}
+	  }
 	#iconLeft {
-	}
+	  }
 	#iconRight {
 	  float: right;
-	}
+	  }
+
+
 
 
 }
@@ -33,11 +37,12 @@ Phones and larger
 /*=======================================
 Phones and larger
 =====================================*/
-
+/*=========Background colors for testing==============*/
 @media screen and (min-width: 845px) {
    body {
    	background-color: grey;
    }
+/*============= Top Area ==========*/    
   #topArea {
 	  margin: 0 0;
 	  margin-right: 10%;
@@ -47,18 +52,21 @@ Phones and larger
 	  padding: 0;
 	  margin-top: 20px;
 	  margin-right: 150px;
-  }
+    }
+
 
 
 }
 /*=======================================
 Tablets / Desktop
 =====================================*/
+
 /*=========Background colors for testing==============*/
 @media screen and (min-width: 1191px) {
   body{
   	background-color: white;
-  }
+    }
+/*============= Top Area ==========*/  
   #topArea {
 	  margin: 0 0;
 	  margin-right: 7%;
@@ -68,24 +76,26 @@ Tablets / Desktop
 	  padding: 0;
 	  margin-top: 20px;
 	  margin-right: 150px;
-  }
+    }
+/*============= Icon Area ==========*/   
 	.iconStyle {
 		width: 50px;
-	}
+	  }
 	#iconLeft {
 		margin-right: 200px;
-	}
+	  } 
 	#iconRight {
 		float: right;
-	}
-	  
+	  }
+/*============= Board Area ==========*/ 	  
 	.boardContainer {
 		background-color: black;
 		width: 90%;
 	  max-width: 425px;
 		margin-left: 300px;
 	  display: inline-block;
-	}
+	  }
+/*============= Score Area ==========*/ 	
 	#scoreText {
 	  background-color: white;
 	  text-align: center;
@@ -93,7 +103,7 @@ Tablets / Desktop
 	  margin-left: 300px;
 	  max-width: 425px;
 	  position: relative;
-	}
+	  }
 
 
 }

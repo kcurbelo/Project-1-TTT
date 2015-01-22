@@ -1,16 +1,21 @@
 body{
 	background-color: salmon;
 
-}
+  }
+
+
 
 /*===============================
 BORDER BOX SETUP
 =================================*/
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+  }
+
+
 
 /*===============================
 TOP AREA
@@ -19,41 +24,40 @@ TOP AREA
   background-color: grey;
   text-align: center;
   font-size: 1.5em;
-}
-
-
+  }
 
 
 
 /*===============================
 TOP AREA
 =================================*/
+
 #topArea {
   padding: 5%;
   margin: 0 5%;
   max-width: 425px;
   background-color: black;
   display: inline-block;
-}
-
+  }
 .iconStyle {
 	width: 20%;
-}
+  }
 #iconLeft {
-
-}
+  }
 #iconRight {
 	float: right;
-}
+  }
+
 
 
 /*===============================
 CONTAINER
 =================================*/
+
 #container {
   background-color: pink;
   /*clear: both;*/
-}
+  }
 
 .boardContainer {
 	background-color: black;
@@ -61,7 +65,9 @@ CONTAINER
   max-width: 425px;
 	margin-left: 5%;
   display: inline-block;
-}
+  }
+
+
 
 /*===============================
 Box Class
@@ -71,7 +77,9 @@ Box Class
 	background-color: green;
 	width: 33.333%;
 	height: 33.333%;
-}
+  }
+
+
 
 /*===============================
 Box Ids
@@ -81,47 +89,47 @@ Box Ids
   background-color: red;
   float: left;
   padding: 15%;
-}
+  }
 #box2 {
   background-color: white;
 	float: left;
   padding: 15%;
-}
+  }
 #box3 {
 	background-color: blue;
 	float: left;
   padding: 15%;
-}
+  }
 #box4 {
   background-color: wheat;
   float: left;
   padding: 15%;
-}
+  }
 #box5 {
   background-color: orange;
 	float: left;
   padding: 15%;
-}
+  }
 #box6 {
 	background-color: yellow;
 	float: left;
   padding: 15%;
-}
+  }
 #box7 {
   background-color: grey;
   float: left;
   padding: 15%;
-}
+  }
 #box8 {
   background-color: darkred;
 	float: left;
   padding: 15%;
-}
+  }
 #box9 {
 	background-color: coral;
 	float: left;
   padding: 15%;
-}
+  }
 
 
 
@@ -129,14 +137,11 @@ Box Ids
 Bottom Counter Area
 =================================*/
 
-
-
-
 #bottomContainer {
   background-color: darkred;
   max-width: 425px;
   width: 406px;
-}
+  }
 
 #scoreText {
   background-color: white;
@@ -144,12 +149,11 @@ Bottom Counter Area
   margin: 0 5%;
   max-width: 425px;
   position: relative;
-}
+  }
 
 #scoreContainer {
-  background-color: blue;
-  
-}
+  background-color: blue; 
+  }
 
 #scoreLeft {
   background-color: green;
@@ -159,7 +163,7 @@ Bottom Counter Area
   margin-bottom: 0px;
   margin-left: 15%;
   float: left;
-}
+  }
 #scoreRight {
   background-color: dodgerblue;
   font-size: 2em;
@@ -167,15 +171,18 @@ Bottom Counter Area
   margin-right: 15%;
   margin-top: 0;
   margin-bottom: 0px;
-}
+  }
 h1 {
   text-align: center;
   background-color: white;
-}
+  }
 
-footer {
-  background-color: blue
-}
 
+
+/*===============================
+Chat Area
+=================================*/
+
+}
 
 
