@@ -1,0 +1,94 @@
+
+
+/*=======================================
+Phones
+=====================================*/
+
+@media screen and (min-width: 450px) {
+	body {
+		background-color: green;
+
+     /*max-width: 450px;*/
+     /*max-height: 630px;*/
+   /*425 max height on container*/
+
+	}
+
+#topArea {
+  padding: 5%;
+  margin: 0 0;
+  max-width: 200px;
+  background-color: black;
+  /*display: inline-block;*/
+  float: right;
+}
+
+
+
+
+.iconStyle {
+	width: 20%;
+}
+#iconLeft {
+
+}
+#iconRight {
+	float: right;
+}
+/*.iconStyle {
+	width: 20%;
+}
+#iconLeft {
+  display: inline-block;
+}
+#iconRight {
+display: block;
+margin: 1px;
+border: 1px solid white;
+}*/
+
+
+
+
+}
+/*Player profiles go on the right*/
+
+
+
+/*=======================================
+Tablets / Desktop
+=====================================*/
+
+
+/*=========Background colors for testing==============*/
+@media screen and (min-width: 800px) {
+  body{
+  	background-color: white;
+  }
+		#topArea {
+		  padding: 5%;
+		  margin: 0 0;
+		  max-width: 425px;
+		  background-color: green;
+		  /*display: inline-block;*/
+		  float: right;
+		  /*visibility: hidden;*/
+		}
+
+
+
+
+/*		.iconStyle {
+			width: 20%;
+		}
+		#iconLeft {
+		  display: inline-block;
+		}
+		#iconRight {
+		display: block;
+		margin: 1px;
+		border: 1px solid grey;
+		}*/
+
+
+}
