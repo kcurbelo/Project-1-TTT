@@ -15,6 +15,19 @@ BORDER BOX SETUP
 /*===============================
 TOP AREA
 =================================*/
+#titleBar {
+  background-color: grey;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+
+
+/*===============================
+TOP AREA
+=================================*/
 #topArea {
   padding: 5%;
   margin: 0 5%;

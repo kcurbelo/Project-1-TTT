@@ -1,94 +1,99 @@
 
 
 /*=======================================
-Phones
+Phones and larger
 =====================================*/
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 727px) {
 	body {
 		background-color: green;
-
-     /*max-width: 450px;*/
-     /*max-height: 630px;*/
-   /*425 max height on container*/
-
+	}
+	#topArea {
+	  margin: 0 0;
+	  margin-right: 7%;
+	  max-width: 200px;
+	  background-color: black;
+	  float: right;
+	  padding: 0;
+	  margin-top: 20px;
+	}
+	.iconStyle {
+	  width: 25%;
+	}
+	#iconLeft {
+	}
+	#iconRight {
+	  float: right;
 	}
 
-#topArea {
-  padding: 5%;
-  margin: 0 0;
-  max-width: 200px;
-  background-color: black;
-  /*display: inline-block;*/
-  float: right;
-}
-
-
-
-
-.iconStyle {
-	width: 20%;
-}
-#iconLeft {
 
 }
-#iconRight {
-	float: right;
-}
-/*.iconStyle {
-	width: 20%;
-}
-#iconLeft {
-  display: inline-block;
-}
-#iconRight {
-display: block;
-margin: 1px;
-border: 1px solid white;
-}*/
-
-
-
-
-}
-/*Player profiles go on the right*/
-
 
 
 /*=======================================
-Tablets / Desktop
+Phones and larger
 =====================================*/
 
+@media screen and (min-width: 845px) {
+   body {
+   	background-color: grey;
+   }
+  #topArea {
+	  margin: 0 0;
+	  margin-right: 10%;
+	  max-width: 200px;
+	  background-color: black;
+	  float: right;
+	  padding: 0;
+	  margin-top: 20px;
+	  margin-right: 150px;
+  }
 
+
+}
+/*=======================================
+Tablets / Desktop
+=====================================*/
 /*=========Background colors for testing==============*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1191px) {
   body{
   	background-color: white;
   }
-		#topArea {
-		  padding: 5%;
-		  margin: 0 0;
-		  max-width: 425px;
-		  background-color: green;
-		  /*display: inline-block;*/
-		  float: right;
-		  /*visibility: hidden;*/
-		}
-
-
-
-
-/*		.iconStyle {
-			width: 20%;
-		}
-		#iconLeft {
-		  display: inline-block;
-		}
-		#iconRight {
-		display: block;
-		margin: 1px;
-		border: 1px solid grey;
-		}*/
+  #topArea {
+	  margin: 0 0;
+	  margin-right: 7%;
+	  max-width: 400px;
+	  background-color: black;
+	  float: right;
+	  padding: 0;
+	  margin-top: 20px;
+	  margin-right: 150px;
+  }
+	.iconStyle {
+		width: 50px;
+	}
+	#iconLeft {
+		margin-right: 200px;
+	}
+	#iconRight {
+		float: right;
+	}
+	  
+	.boardContainer {
+		background-color: black;
+		width: 90%;
+	  max-width: 425px;
+		margin-left: 300px;
+	  display: inline-block;
+	}
+	#scoreText {
+	  background-color: white;
+	  text-align: center;
+	  margin: 0 0;
+	  margin-left: 300px;
+	  max-width: 425px;
+	  position: relative;
+	}
 
 
 }
