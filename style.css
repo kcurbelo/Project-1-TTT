@@ -57,8 +57,8 @@ Box Class
 
 .box {
 	/*background-color: green;*/
-	width: 33.333%;
-	height: 33.333%;
+	width: 120px;
+	height: 120px;
   }
 
 
@@ -67,47 +67,47 @@ Box Class
 Box Ids
 =================================*/
 
-#box1 {
+#box0 {
   background-color: wheat;
   float: left;
   padding: 15%;
   }
-#box2 {
+#box1 {
   background-color: darkred;
 	float: left;
   padding: 15%;
   }
-#box3 {
+#box2 {
 	background-color: wheat;
 	float: left;
   padding: 15%;
   }
-#box4 {
+#box3 {
   background-color: darkred;
   float: left;
   padding: 15%;
   }
-#box5 {
+#box4 {
   background-color: wheat;
 	float: left;
   padding: 15%;
   }
-#box6 {
+#box5 {
 	background-color: darkred;
 	float: left;
   padding: 15%;
   }
-#box7 {
+#box6 {
   background-color: wheat;
   float: left;
   padding: 15%;
   }
-#box8 {
+#box7 {
   background-color: darkred;
 	float: left;
   padding: 15%;
   }
-#box9 {
+#box8 {
 	background-color: wheat;
 	float: left;
   padding: 15%;
