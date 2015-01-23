@@ -1,36 +1,20 @@
-
-
-
-/*=======================================
-Phones and larger
-=====================================*/
 /*=========Background colors for testing==============*/
 @media screen and (min-width: 845px) {
 
-
 #iconArea {
-  /*background-color: black;*/
   width: 90%;
   max-width: 425px;
   margin-left: 35%;
-  /*display: inline-block;*/
 }
-
-
 #boardArea {
-	/*background-color: black;*/
 	width: 90%;
   max-width: 425px;
 	margin-left: 35%;
-  /*display: inline-block;*/
   }
-
   #bottomArea {
-  /*background-color: black;*/
   width: 90%;
   max-width: 425px;
-  margin-left: 34%;
-  /*display: inline-block;*/
-}
+  margin-left: 32%;
+  }
  
 }

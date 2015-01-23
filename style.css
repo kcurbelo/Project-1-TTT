@@ -32,7 +32,7 @@ BORDER BOX SETUP
   margin-right: 10px;
 }
 #icon2 {
- margin-left: 160px;
+ margin-left: 145px;
 }
 
 
@@ -66,54 +66,59 @@ Box Class
 /*===============================
 Box Ids
 =================================*/
-/*!!!!!!!!!!!!!!!!!!!!!!!ENDED HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 #box0 {
   background-color: wheat;
   float: left;
-  padding-top: 53px;  
+  padding-top: 55px;  
   text-align: center;
-  /*margin: 2px 0px*/
   }
-  /*!!!!!!!!!!!!!!!!!!!!!!!ENDED HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 #box1 {
   background-color: darkred;
 	float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box2 {
 	background-color: wheat;
 	float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box3 {
   background-color: darkred;
   float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box4 {
   background-color: wheat;
 	float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box5 {
 	background-color: darkred;
 	float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box6 {
   background-color: wheat;
   float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box7 {
   background-color: darkred;
 	float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 #box8 {
 	background-color: wheat;
 	float: left;
-  /*padding: 15%;*/
+  padding-top: 55px;  
+  text-align: center;
   }
 
 
@@ -161,10 +166,10 @@ Score Area Count
   /*background-color: black;*/
   width: 90%;
   max-width: 425px;
-  margin-left: 5%;
+  margin-left: 2%;
   /*display: inline-block;*/
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 /*Fixing the styling on the "x"s so that they dont scale and end up in the wrong position. This was achieved by using padding top */
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
