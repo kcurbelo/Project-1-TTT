@@ -1,109 +1,36 @@
 
 
-/*=======================================
-Phones and larger
-=====================================*/
-/*=========Background colors for testing==============*/
-@media screen and (min-width: 727px) {
-	body {
-		background-color: green;
-	}
-/*============= Top Area ==========*/ 	
-	#topArea {
-	  margin: 0 0;
-	  margin-right: 7%;
-	  max-width: 200px;
-	  background-color: black;
-	  float: right;
-	  padding: 0;
-	  margin-top: 20px;
-	  }
-/*============= Icon Area ==========*/	
-	.iconStyle {
-	  width: 25%;
-	  }
-	#iconLeft {
-	  }
-	#iconRight {
-	  float: right;
-	  }
-
-
-
-
-}
-
 
 /*=======================================
 Phones and larger
 =====================================*/
 /*=========Background colors for testing==============*/
 @media screen and (min-width: 845px) {
-   body {
-   	background-color: grey;
-   }
-/*============= Top Area ==========*/    
-  #topArea {
-	  margin: 0 0;
-	  margin-right: 10%;
-	  max-width: 200px;
-	  background-color: black;
-	  float: right;
-	  padding: 0;
-	  margin-top: 20px;
-	  margin-right: 150px;
-    }
 
 
-
+#iconArea {
+  /*background-color: black;*/
+  width: 90%;
+  max-width: 425px;
+  margin-left: 35%;
+  /*display: inline-block;*/
 }
-/*=======================================
-Tablets / Desktop
-=====================================*/
-
-/*=========Background colors for testing==============*/
-@media screen and (min-width: 1191px) {
-  body{
-  	background-color: white;
-    }
-/*============= Top Area ==========*/  
-  #topArea {
-	  margin: 0 0;
-	  margin-right: 7%;
-	  max-width: 400px;
-	  background-color: black;
-	  float: right;
-	  padding: 0;
-	  margin-top: 20px;
-	  margin-right: 150px;
-    }
-/*============= Icon Area ==========*/   
-	.iconStyle {
-		width: 50px;
-	  }
-	#iconLeft {
-		margin-right: 200px;
-	  } 
-	#iconRight {
-		float: right;
-	  }
-/*============= Board Area ==========*/ 	  
-	.boardContainer {
-		background-color: black;
-		width: 90%;
-	  max-width: 425px;
-		margin-left: 300px;
-	  display: inline-block;
-	  }
-/*============= Score Area ==========*/ 	
-	#scoreText {
-	  background-color: white;
-	  text-align: center;
-	  margin: 0 0;
-	  margin-left: 300px;
-	  max-width: 425px;
-	  position: relative;
-	  }
 
 
+#boardArea {
+	/*background-color: black;*/
+	width: 90%;
+  max-width: 425px;
+	margin-left: 35%;
+  display: inline-block;
+  }
+
+  #bottomArea {
+  /*background-color: black;*/
+  width: 90%;
+  max-width: 425px;
+  margin-left: 35%;
+  /*display: inline-block;*/
+}
+ 
 }

@@ -1,7 +1,4 @@
-body{
-	background-color: salmon;
 
-  }
 
 
 
@@ -17,50 +14,35 @@ BORDER BOX SETUP
 
 
 
-/*===============================
-TOP AREA
-=================================*/
-#titleBar {
-  background-color: grey;
-  text-align: center;
-  font-size: 1.5em;
-  }
-
-
 
 /*===============================
-TOP AREA
+ Pics
 =================================*/
-
-#topArea {
-  padding: 5%;
-  margin: 0 5%;
+#iconArea {
+  /*background-color: black;*/
+  width: 90%;
   max-width: 425px;
-  background-color: black;
-  display: inline-block;
-  }
-.iconStyle {
-	width: 20%;
-  }
-#iconLeft {
-  }
-#iconRight {
-	float: right;
-  }
+  margin-left: 5%;
+  /*display: inline-block;*/
+}
+.icons {
+  width: 25%
+}
+#icon1 {
+
+}
+#icon2 {
+ margin-left: 48%
+}
 
 
 
 /*===============================
-CONTAINER
+ TTT CONTAINER
 =================================*/
 
-#container {
-  background-color: pink;
-  /*clear: both;*/
-  }
-
-.boardContainer {
-	background-color: black;
+#boardArea{
+	/*background-color: black;*/
 	width: 90%;
   max-width: 425px;
 	margin-left: 5%;
@@ -74,7 +56,7 @@ Box Class
 =================================*/
 
 .box {
-	background-color: green;
+	/*background-color: green;*/
 	width: 33.333%;
 	height: 33.333%;
   }
@@ -86,37 +68,37 @@ Box Ids
 =================================*/
 
 #box1 {
-  background-color: red;
-  float: left;
-  padding: 15%;
-  }
-#box2 {
-  background-color: white;
-	float: left;
-  padding: 15%;
-  }
-#box3 {
-	background-color: blue;
-	float: left;
-  padding: 15%;
-  }
-#box4 {
   background-color: wheat;
   float: left;
   padding: 15%;
   }
+#box2 {
+  background-color: darkred;
+	float: left;
+  padding: 15%;
+  }
+#box3 {
+	background-color: wheat;
+	float: left;
+  padding: 15%;
+  }
+#box4 {
+  background-color: darkred;
+  float: left;
+  padding: 15%;
+  }
 #box5 {
-  background-color: orange;
+  background-color: wheat;
 	float: left;
   padding: 15%;
   }
 #box6 {
-	background-color: yellow;
+	background-color: darkred;
 	float: left;
   padding: 15%;
   }
 #box7 {
-  background-color: grey;
+  background-color: wheat;
   float: left;
   padding: 15%;
   }
@@ -126,7 +108,7 @@ Box Ids
   padding: 15%;
   }
 #box9 {
-	background-color: coral;
+	background-color: wheat;
 	float: left;
   padding: 15%;
   }
@@ -134,55 +116,49 @@ Box Ids
 
 
 /*===============================
-Bottom Counter Area
+Score Area
 =================================*/
 
-#bottomContainer {
-  background-color: darkred;
+#scoreArea {
+  /*background-color: black;*/
+  width: 90%;
   max-width: 425px;
-  width: 406px;
-  }
-
-#scoreText {
-  background-color: white;
+  margin-left: 5%;
+  display: inline-block;
+  /*background-color: blue;*/
   text-align: center;
-  margin: 0 5%;
-  max-width: 425px;
-  position: relative;
-  }
-
-#scoreContainer {
-  background-color: blue; 
-  }
-
-#scoreLeft {
-  background-color: green;
-  font-size: 2em;
-  text-align: left;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 15%;
-  float: left;
-  }
-#scoreRight {
-  background-color: dodgerblue;
-  font-size: 2em;
-  text-align: right;
-  margin-right: 15%;
-  margin-top: 0;
-  margin-bottom: 0px;
-  }
-h1 {
-  text-align: center;
-  background-color: white;
-  }
-
-
-
-/*===============================
-Chat Area
-=================================*/
-
 }
 
+/*===============================
+Score Area Count
+=================================*/
+#scoreCount {
+/*background-color: black;*/
+  width: 90%;
+  max-width: 425px;
+  margin-left: 5%;
+  display: inline-block;
+  /*background-color: darkblue;*/
+}
+
+#scoreLeft {
+ /*background-color: white;*/
+ width: 45%;
+ float: left;
+ padding-left: 50px;
+}
+#scoreRight {
+/*background-color: white;*/
+ width: 45%;
+ float: left;
+ text-align: right;
+}
+
+#bottomArea {
+  /*background-color: black;*/
+  width: 90%;
+  max-width: 425px;
+  margin-left: 5%;
+  /*display: inline-block;*/
+}
 

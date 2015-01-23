@@ -1,32 +1,58 @@
 <html>
 <head>
 	<title></title>
-	<style>
-	  .leftSide {border-left 3px solid orange}
-	  .topSide {border-top 3px solid orange}
-	  #board {width: 600px;}
-	  div > div {
-	  	border: 3px solid black;
-	    width: 190px;
-	    height: 190px;
-	    display: inline-block;
-	  }
-	</style>
+	<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
 
-	<div id="board"></div>
+  <div id="container">
+    <div id="leftSide">
+    	<div id="box1">
+          <img src="player1Icon.png" id="icon1" class="icons">
+          <img src="player2Icon.png" id="icon2" class="icons">   
+        </div>
+      <div id="box2">
+    <div class="boardContainer">
+      <div id="tile1" class="box">
+      cs
+      </div>
+      <div id="tile2" class="box">
+      cs
+      </div>
+      <div id="tile3" class="box">
+      cs
+      </div>
+      <div id="tile4" class="box">
+      cs
+      </div>
+      <div id="tile5" class="box">
+      cs
+      </div>
+      <div id="tile6" class="box">
+      cs
+      </div>
+      <div id="tile7" class="box">
+      cs
+      </div>
+      <div id="tile8" class="box">
+      cs
+      </div>
+      <div id="tile9" class="box">
+      cs
+      </div>
+    </div>
 
-	<script>
-  var board = document.getElementById("board");
-  for(var i = 0; i < 9; ++i) {
-  	var newDiv = document.createElement("div");
-  	board.appendChild(newDiv);
-  	newDiv.innerHTML = i; 
-  	newDiv.addEventListener("mouseenter").style.backgroundcolor="Blue";
-  	newDiv.addEventListener("mouseleave").style.backgroundcolor="green";
-  }
-	</script>
+
+
+      </div>
+    </div>
+    <div id="rightSide">
+    	<div id="box3">.</div>
+    	<div id="box4">.</div>
+    </div>
+  </div>
+
+
 
 </body>
 </html>
