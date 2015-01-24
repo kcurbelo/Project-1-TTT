@@ -24,9 +24,21 @@
 //=========================================
 //Other Variables
 //=========================================
-	var player = true; 
+	var player = 1; 
 
 	var turnCount = 0;
+
+// document.getElementById("box0").addEventListener("click", function (){
+
+// }
+// document.getElementById("box1").addEventListener("click", function (){
+	
+// }
+// document.getElementById("box2").addEventListener("click", function (){
+	
+// }
+
+
 
 
     
@@ -41,54 +53,56 @@
 //Adding event listener vs onclick to be able to change what it is listening for (i.e keystroke)
 
 
+		           // if (box0 == "X") {
+		           // 	box0.removeEventListener("click")
+		           // };
 //======================== Boxes on click... with turns ========================
 
 	document.getElementById("box0").addEventListener("click", function (){
 		console.log("Box0 was clicked");
-		   if(player == true){
-		       box0.innerHTML= "X"
-		       player = false
-		           if (box0 == "X") {
-		           	box0.removeEventListener("click")
-		           };
+		   if(player == 1 && box0.innerHTML == ""){ //As long as value is not being filled 
+		       box0.innerHTML= "X";
+		       console.log("SAm")
+		       player = 2;
+
 		   }
 
-		   else if(player == false){
+		   else if(player == 2 && box0.innerHTML == ""){
 		   	box0.innerHTML = "O"
-		   	player = true
+		   	player = 1
 		   }
     });
-    document.getElementById("box1").addEventListener("click", function (){
-		console.log("Box1 was clicked");
-		   if(player == true){
-		       box1.innerHTML= "X"
-		   }
-		   else if(player == false){
-		   	box1.innerHTML = "O"
-		   	player = true
-		   }
-    });
-	document.getElementById("box2").addEventListener("click", function (){
-		console.log("Box2 was clicked");
-		   if(player == true){
-		       box2.innerHTML= "X"
-		       player = false
-		   }
-		   else if(player == false){
-		   	box2.innerHTML = "O"
-		   	player = true
-		   }
-    });
-    document.getElementById("box3").addEventListener("click", function (){
-		console.log("Box3 was clicked");
-		   if(player == true){
-		       box3.innerHTML= "X"
-		   }
-		   else if(player == false){
-		   	box3.innerHTML = "O"
-		   	player = true
-		   }
-    });
+ //    document.getElementById("box1").addEventListener("click", function (){
+	// 	console.log("Box1 was clicked");
+	// 	   if(player == true){
+	// 	       box1.innerHTML= "X"
+	// 	   }
+	// 	   else if(player == false){
+	// 	   	box1.innerHTML = "O"
+	// 	   	player = true
+	// 	   }
+ //    });
+	// document.getElementById("box2").addEventListener("click", function (){
+	// 	console.log("Box2 was clicked");
+	// 	   if(player == true){
+	// 	       box2.innerHTML= "X"
+	// 	       player = false
+	// 	   }
+	// 	   else if(player == false){
+	// 	   	box2.innerHTML = "O"
+	// 	   	player = true
+	// 	   }
+ //    });
+ //    document.getElementById("box3").addEventListener("click", function (){
+	// 	console.log("Box3 was clicked");
+	// 	   if(player == true){
+	// 	       box3.innerHTML= "X"
+	// 	   }
+	// 	   else if(player == false){
+	// 	   	box3.innerHTML = "O"
+	// 	   	player = true
+	// 	   }
+ //    });
 
 
 	
