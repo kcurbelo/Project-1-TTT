@@ -29,7 +29,20 @@
 	var player = 1; 
 	var turnCount = 0;
 
+//=========================================
+//Winning arrays
+//=========================================
+ var win0 = [0, 1, 2]
+ var win1 = [3, 4, 5]
+ var win2 = [6, 7, 8]
+ var win3 = [0, 3, 6]
+ var win4 = [1, 4, 7]
+ var win5 = [2, 5, 8]    
+ var win6 = [0, 4, 8]
+ var win7 = [2, 4, 6]
 
+ var playerOneArray = []
+ var playerTwoArray = []
 
 //=========================================
 //Boxes with onclicks and player turns
@@ -41,10 +54,14 @@
 		     box0.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(0)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box0.innerHTML == ""){
 		   	 box0.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(0)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box1 ========
@@ -54,10 +71,14 @@
 		     box1.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(1)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works		     
 		   }
 		   else if(player == 2 && box1.innerHTML == ""){
 		   	 box1.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(1)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box2 ========
@@ -67,10 +88,14 @@
 		     box2.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(2)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box2.innerHTML == ""){
 		   	 box2.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(2)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box3 ========
@@ -80,10 +105,14 @@
 		     box3.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(3)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box3.innerHTML == ""){
 		   	 box3.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(3)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box4 ========
@@ -93,10 +122,14 @@
 		     box4.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(4)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box4.innerHTML == ""){
 		   	 box4.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(4)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box5 ========
@@ -106,10 +139,14 @@
 	       box5.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(5)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box5.innerHTML == ""){
 		   	 box5.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(5)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box6 ========
@@ -119,10 +156,14 @@
 		     box6.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(6)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box6.innerHTML == ""){
 		     box6.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(6)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box7 ========
@@ -132,10 +173,14 @@
 		     box7.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(7)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box7.innerHTML == ""){
 		   	 box7.innerHTML = "O"
 		   	 player = 1
+		     playerTwoArray.push(7)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 //======== box8 ========
@@ -145,13 +190,20 @@
 		     box8.innerHTML= "X";
 		     console.log("X works")
 		     player = 2;
+		     playerOneArray.push(8)//Pushing the location to the array.
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		   }
 		   else if(player == 2 && box8.innerHTML == ""){
 		     box8.innerHTML = "O"
 		   	  player = 1
+		     playerTwoArray.push(8)//Pushing the location to the array.
+		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
     });
 
+//=========================================
+//Win logic
+//=========================================
 
-	
+
 
