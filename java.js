@@ -44,6 +44,11 @@
  var playerOneArray = []
  var playerTwoArray = []
 
+ //=========================================
+//Win logic
+//=========================================
+var holdingArray = []
+
 //=========================================
 //Boxes with onclicks and player turns
 //=========================================
@@ -56,6 +61,11 @@
 		     player = 2;
 		     playerOneArray.push(0)//Pushing the location to the array.
 		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
+		     //Sending the variable to the holding array 
+		     var poppedIndex = playerOneArray.pop()
+		     console.log(playerOneArray) 
+		     holdingArray.push(poppedIndex)
+		     console.log(holdingArray)
 		   }
 		   else if(player == 2 && box0.innerHTML == ""){
 		   	 box0.innerHTML = "O"
@@ -192,6 +202,7 @@
 		     player = 2;
 		     playerOneArray.push(8)//Pushing the location to the array.
 		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
+		     
 		   }
 		   else if(player == 2 && box8.innerHTML == ""){
 		     box8.innerHTML = "O"
@@ -201,9 +212,10 @@
 		   }
     });
 
-//=========================================
-//Win logic
-//=========================================
+
+
+
+
 
 
 
