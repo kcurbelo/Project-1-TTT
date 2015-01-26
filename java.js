@@ -48,6 +48,9 @@
 //Win logic
 //=========================================
 var holdingArray = []
+var p1Sorted = playerOneArray.sort()
+
+
 
 //=========================================
 //Boxes with onclicks and player turns
@@ -62,10 +65,11 @@ var holdingArray = []
 		     playerOneArray.push(0)//Pushing the location to the array.
 		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
 		     //Sending the variable to the holding array 
-		     var poppedIndex = playerOneArray.pop()
-		     console.log(playerOneArray) 
-		     holdingArray.push(poppedIndex)
-		     console.log(holdingArray)
+		     // var poppedIndex = playerOneArray.pop()
+		     // console.log(playerOneArray) 
+		     // holdingArray.push(poppedIndex)
+		     // console.log(holdingArray)
+
 		   }
 		   else if(player == 2 && box0.innerHTML == ""){
 		   	 box0.innerHTML = "O"
@@ -201,18 +205,45 @@ var holdingArray = []
 		     console.log("X works")
 		     player = 2;
 		     playerOneArray.push(8)//Pushing the location to the array.
-		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works	
-		     
+		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works
+//Win logic using if statements ===============================================================================================	
+//currently x can only win in a diagonal and if it is sequential 
+		         if(playerOneArray[0] == 2 || playerOneArray[0] == 0 || playerOneArray[0] == 1 || playerOneArray[0] == 3){
+	           console.log("Fun times!")
+                 if(playerOneArray[1] == 1 || playerOneArray[1] == 4 || playerOneArray[1] == 3 || playerOneArray[1] == 6 || playerOneArray[1] == 7 || playerOneArray[1] == 35){
+                 console.log("funner times!")
+                 	    if(playerOneArray[2] == 2 || playerOneArray[2] == 5 || playerOneArray[2] == 8 || playerOneArray[2] == 6 || playerOneArray[2] == 7){
+                 	    alert("x wins!")
+                      }
+                 }
+             }
 		   }
+//=====================================================================================================================================
 		   else if(player == 2 && box8.innerHTML == ""){
 		     box8.innerHTML = "O"
 		   	  player = 1
 		     playerTwoArray.push(8)//Pushing the location to the array.
 		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
 		   }
+
     });
 
 
+
+// if(playerOneArray[0] == 0) {
+// 	// holdingArray.push(0)
+// 	console.log("Push worked!")
+// }
+	   // for (var i = playerOneArray.length; i < 5; i++) {
+	   //       if(playerOneArray[0] == 2 || playerOneArray[0] == 0 || playerOneArray[0] == 1 || playerOneArray[0] == 3){
+    //          console.log("Or statement work")
+    //           }
+    //         }
+
+
+// if(playerOneArray[0] == 2 || playerOneArray[0] == 0 || playerOneArray[0] == 1 || playerOneArray[0] == 3){
+// 	console.log("Fun times!")
+// }
 
 
 
