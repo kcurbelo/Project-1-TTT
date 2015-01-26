@@ -208,25 +208,63 @@ var p1Sorted = playerOneArray.sort()
 		     console.log("playerOneArray is currently: " + playerOneArray)//checking to see if it works
 //Win logic using if statements ===============================================================================================	
 //currently x can only win in a diagonal and if it is sequential 
-		         if(playerOneArray[0] == 2 || playerOneArray[0] == 0 || playerOneArray[0] == 1 || playerOneArray[0] == 3){
-	           console.log("Fun times!")
-                 if(playerOneArray[1] == 1 || playerOneArray[1] == 4 || playerOneArray[1] == 3 || playerOneArray[1] == 6 || playerOneArray[1] == 7 || playerOneArray[1] == 35){
-                 console.log("funner times!")
-                 	    if(playerOneArray[2] == 2 || playerOneArray[2] == 5 || playerOneArray[2] == 8 || playerOneArray[2] == 6 || playerOneArray[2] == 7){
-                 	    alert("x wins!")
-                      }
-                 }
-             }
-		   }
+         if(playerOneArray[0] == 0){
+	         if(playerOneArray[1] == 4) {
+		         if (playerOneArray[2] == 8) {
+			       alert("Winner")
+		         };
+		       };
+		     };
+	       if(playerOneArray[2] == 4){
+           if(playerOneArray[3] == 8){
+           alert("Winner")
+           };
+	       };
+	       if(playerOneArray[3] == 4){
+	       	 if(playerOneArray[4] == 8){
+           alert("Winner")
+	       	 }
+	       }
+	       if(playerOneArray[4] == 4){
+	       	 if(playerOneArray[5] == 8)
+	       	 alert("winner")
+	       }
+         
+		   }//end of x player function 
 //=====================================================================================================================================
 		   else if(player == 2 && box8.innerHTML == ""){
 		     box8.innerHTML = "O"
 		   	  player = 1
 		     playerTwoArray.push(8)//Pushing the location to the array.
 		     console.log("playerTwoArray is currently: " + playerTwoArray)//checking to see if it works	
-		   }
+//Win logic ==================================================================================
+         if(playerTwoArray[0] == 0){
+	         if(playerTwoArray[1] == 4) {
+		         if (playerTwoArray[2] == 8) {
+			       alert("Winner")
+		         };
+		       };
+		     };
+	       if(playerTwoArray[2] == 4){
+           if(playerTwoArray[3] == 8){
+           alert("Winner")
+           };
+	       };
+	       if(playerTwoArray[3] == 4){
+	       	 if(playerOneArray[4] == 8){
+           alert("Winner")
+	       	 }
+	       }
+	       if(playerTwoArray[4] == 4){
+	       	 if(playerOneArray[5] == 8)
+	       	 alert("winner")
+	       }
 
-    });
+// ==================================================================================
+
+		   }//end of "o" player function 
+
+    });//End of box8 onclick function
 
 
 
@@ -244,6 +282,59 @@ var p1Sorted = playerOneArray.sort()
 // if(playerOneArray[0] == 2 || playerOneArray[0] == 0 || playerOneArray[0] == 1 || playerOneArray[0] == 3){
 // 	console.log("Fun times!")
 // }
+
+
+
+
+		         // if(playerOneArray[0] == 2 || playerOneArray[0] == 0 || playerOneArray[0] == 1 || playerOneArray[0] == 3){
+	          //  console.log("first index")
+           //       if(playerOneArray[1] == 1 || playerOneArray[1] == 4 || playerOneArray[1] == 3 || playerOneArray[1] == 6 || playerOneArray[1] == 7 || playerOneArray[1] == 5){
+           //       console.log("second index")
+           //       	    if(playerOneArray[2] == 2 || playerOneArray[2] == 5 || playerOneArray[2] == 8 || playerOneArray[2] == 6 || playerOneArray[2] == 7){
+           //       	    console.log("jump")
+           //            }
+           //       }
+           //       else if(playerOneArray[2] == 1 || playerOneArray[2] == 4 || playerOneArray[2] == 3 || playerOneArray[2] == 6 || playerOneArray[2] == 7 || playerOneArray[2] == 5){
+           //           if(playerOneArray[3] == 2 || playerOneArray[3] == 5 || playerOneArray[3] == 8 || playerOneArray[3] == 6 || playerOneArray[3] == 7){
+           //       	    console.log("third index")
+           //            }
+           //       }
+           //       else if(playerOneArray[3] == 1 || playerOneArray[3] == 4 || playerOneArray[3] == 3 || playerOneArray[3] == 6 || playerOneArray[3] == 7 || playerOneArray[3] == 5){
+           //       	    if(playerOneArray[4] == 2 || playerOneArray[4] == 5 || playerOneArray[4] == 8 || playerOneArray[4] == 6 || playerOneArray[4] == 7){
+           //       	    console.log("third index")
+           //            }
+           //       }
+           //       else if(playerOneArray[4] == 1 || playerOneArray[4] == 4 || playerOneArray[4] == 3 || playerOneArray[4] == 6 || playerOneArray[4] == 7 || playerOneArray[4] == 5){
+           //       	    if(playerOneArray[5] == 2 || playerOneArray[5] == 5 || playerOneArray[5] == 8 || playerOneArray[5] == 6 || playerOneArray[5] == 7){
+           //       	    console.log("third index")
+           //            }
+           //       }
+
+           //   }
+             // else if(playerOneArray[0] == 6){
+             //     if(playerOneArray[1] == 1 || playerOneArray[1] == 4 || playerOneArray[1] == 3 || playerOneArray[1] == 6 || playerOneArray[1] == 7 || playerOneArray[1] == 5){
+             //     console.log(" second index")
+             //     	    if(playerOneArray[2] == 2 || playerOneArray[2] == 5 || playerOneArray[2] == 8 || playerOneArray[2] == 6 || playerOneArray[2] == 7){
+             //     	    console.log("third index")
+             //          }
+             //     }
+             //     else if(playerOneArray[2] == 1 || playerOneArray[2] == 4 || playerOneArray[2] == 3 || playerOneArray[2] == 6 || playerOneArray[2] == 7 || playerOneArray[2] == 5){
+             //         if(playerOneArray[3] == 2 || playerOneArray[3] == 5 || playerOneArray[3] == 8 || playerOneArray[3] == 6 || playerOneArray[3] == 7){
+             //     	    console.log(" third index")
+             //          }
+             //     }
+             //     else if(playerOneArray[3] == 1 || playerOneArray[3] == 4 || playerOneArray[3] == 3 || playerOneArray[3] == 6 || playerOneArray[3] == 7 || playerOneArray[3] == 5){
+             //     	    if(playerOneArray[4] == 2 || playerOneArray[4] == 5 || playerOneArray[4] == 8 || playerOneArray[4] == 6 || playerOneArray[4] == 7){
+             //     	    console.log("third index")
+             //          }
+             //     }
+             //     else if(playerOneArray[4] == 1 || playerOneArray[4] == 4 || playerOneArray[4] == 3 || playerOneArray[4] == 6 || playerOneArray[4] == 7 || playerOneArray[4] == 5){
+             //     	    if(playerOneArray[5] == 2 || playerOneArray[5] == 5 || playerOneArray[5] == 8 || playerOneArray[5] == 6 || playerOneArray[5] == 7){
+             //     	    console.log("third index")
+             //          }
+             //     }
+
+             // }
 
 
 
