@@ -1,50 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tic-Tac-Toe</title>
-
-		<link rel="stylesheet" href="normalize.css">
+<head>
+ <title></title>
     <link rel="stylesheet" href="style.css">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="style-angular.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
-		<link rel="stylesheet" type="text/css" href="responsive.css">
-	</head>
+    <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
 
-	<body>
+ <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.1/angularfire.min.js"></script>
 
-      <div id="iconArea">
-      <img src="player1Icon.png" class="icons" id="icon1">
-      <img src="player2Icon.png" class="icons" id="icon2">
-      </div>
-    <!-- ====================TTT Board ==================== -->
-    <div id="boardArea">
-      <div id="box0" class="box"></div>
-      <div id="box1" class="box"></div>
-      <div id="box2" class="box"></div>
-      <div id="box3" class="box"></div>
-      <div id="box4" class="box"></div>
-      <div id="box5" class="box"></div>
-      <div id="box6" class="box"></div>
-      <div id="box7" class="box"></div>
-      <div id="box8" class="box"></div>
-    </div>
-  <!-- ===================  =================== -->
-    
-    <div id="bottomArea">
-      <div id="scoreArea">
-        <h1>Score</h1>
-      </div>
-      <div id="scoreCount">
-        <h1 id="scoreLeft">1</h1>
-        <h1 id="scoreRight">2</h1>
-      </div>
-    </div>
+    <script src="java.js"></script>
+</head>
 
-  
-  </div>
 
-  <script src="java.js"></script>
-
-	</body>
-
+<body ng-app='tttApp' ng-controller='tttController'>
+ <div id="container">
+   <!-- Creates board -->
+   <div ng-repeat="gamePiece in board track by $index"
+     ng-class='{square:true, xSelected:gamePiece=="x", oSelected:gamePiece=="o"}'
+     ng-click='makeMove($index)'
+     ng-bind='gamePiece.playerMove'
+     >
+   </div> 
+   <!-- ^End div that creates board -->
+</div>
+</body>
 </html>

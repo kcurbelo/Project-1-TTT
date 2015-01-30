@@ -1,175 +1,122 @@
-
-
-
-
-/*===============================
-BORDER BOX SETUP
-=================================*/
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  }
-
-
-
-
-/*===============================
- Pics
-=================================*/
-#iconArea {
-  /*background-color: black;*/
-  width: 90%;
-  max-width: 425px;
-  margin-left: 5%;
-  /*display: inline-block;*/
+body {
+ background-image: url('../images/WaterSandBackground.jpg');
+ background-size: cover;
+ font-family: arial;
 }
-.icons {
-  width: 25%
+#container{
+ width:80%;
+ margin: 0 auto;
 }
-#icon1 {
-  margin-right: 10px;
+header{
+ text-align: center; 
+ color: #342A14;
+ font-size: 200%;
 }
-#icon2 {
- margin-left: 145px;
+h1>img{
+ width: 100px;
 }
-
-
-
-/*===============================
- TTT CONTAINER
-=================================*/
-
-#boardArea{
-	/*background-color: black;*/
-	width: 90%;
-  max-width: 425px;
-	margin-left: 5%;
-  display: inline-block;
-  }
-
-
-
-/*===============================
-Box Class
-=================================*/
-
-.box {
-	/*background-color: green;*/
-	width: 120px;
-	height: 120px;
-  }
-
-
-
-/*===============================
-Box Ids
-=================================*/
-#box0 {
-  background-color: wheat;
-  float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box1 {
-  background-color: darkred;
-	float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box2 {
-	background-color: wheat;
-	float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box3 {
-  background-color: darkred;
-  float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box4 {
-  background-color: wheat;
-	float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box5 {
-	background-color: darkred;
-	float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box6 {
-  background-color: wheat;
-  float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box7 {
-  background-color: darkred;
-	float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-#box8 {
-	background-color: wheat;
-	float: left;
-  padding-top: 55px;  
-  text-align: center;
-  }
-
-
-
-/*===============================
-Score Area
-=================================*/
-
-#scoreArea {
-  /*background-color: black;*/
-  width: 90%;
-  max-width: 425px;
-  margin-left: 5%;
-  display: inline-block;
-  /*background-color: blue;*/
-  text-align: center;
+/********************************************/
+/*  Styling for the text showing whose turn */
+/*  it is                                   */
+/********************************************/
+#playerTurn{
+ margin: 0 auto;
 }
-
-/*===============================
-Score Area Count
-=================================*/
-#scoreCount {
-/*background-color: black;*/
-  width: 90%;
-  max-width: 425px;
-  margin-left: 5%;
-  display: inline-block;
-  /*background-color: darkblue;*/
+.currentTurn{
+ font-weight: bold;
+ color: #342A14;
+/* background-image: url('../images/driftwood2.png');
+ background-size: 80px 20px;
+ background-repeat: no-repeat;*/
 }
-
-#scoreLeft {
- /*background-color: white;*/
- width: 45%;
+.notCurrentTurn{
+ color: lightgray;
+}
+.driftwood{
+ width: 80px;
+ height: 20px;
+}
+/*div.notCurrentTurn>img{
+  visibility: hidden;
+}*/
+/********************************************/
+/*  Styling for game board and individual   */
+/*  squares                                 */
+/********************************************/
+#ticTacToeBoard{
+ height: 350px;
+ width: 350px;
+ position:relative;
+ margin: 0 auto;
+}
+#playerTurn{
+ width: 350px;
+ margin: 0 auto;
+}
+.square{
+ height: 100px;
+ width: 100px;
  float: left;
- padding-left: 50px;
+ margin: 5px;
+ border-radius: 5%;
+ border: 1px solid black;
+ background-image: url('../images/wood_grain3.jpg');
+ background-size: contain;
 }
-#scoreRight {
-/*background-color: white;*/
- width: 45%;
- float: left;
- text-align: right;
+/*Applied on mouseout*/
+.blue{
+ /*background-color: blue;*/
+ opacity: 0.5;
+}
+/********************************************/
+/*Styling for margins of tic tac toe squares*/
+/********************************************/
+.left{
+ margin-left:0px;
+}
+.right{
+ margin-right:0px;
+}
+.top{
+ margin-top: 0px;
+}
+.bottom{
+ margin-bottom: 0px;
 }
 
-#bottomArea {
-  /*background-color: black;*/
-  width: 90%;
-  max-width: 425px;
-  margin-left: 2%;
-  /*display: inline-block;*/
+/********************************************/
+/*Styling for x or o class. Class depends on*/
+/*which player clicked the tic tac to square*/
+/********************************************/
+.gameBoardSquare{
+ width: 100%;
+}
+/*Styling for when a board piece is taken*/
+div.taken{
+ opacity: 1;
+}
+/*Styling for div that shows announcement of winner*/
+#winnerIdentity{
+ color: white;
+ margin: 0px auto;
+ text-align: center;
+ z-index: 100;
+ position: relative;
+ top: 100px;
+ background-color: #E9A656;
+ width: 400px;
+}
+#winnerIdentityDiv{
+ height: 0px;
 }
 
-
-/*Fixing the styling on the "x"s so that they dont scale and end up in the wrong position. This was achieved by using padding top */
-
+/*Styling for div that contains 'Play again button'*/
+#playerTurn {
+ margin: 0 auto;
+}
+/*Styling for image that shows play again button */
+#playAgainImage{
+ margin: 0 auto;
+ display: none;
+ width: 200px;
+}
