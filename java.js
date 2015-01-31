@@ -9,11 +9,26 @@ tttApp.controller('tttController', function($scope,$firebase){
   //download the data into an array
   $scope.board=sync.$asArray();
 
-  var counterRef=new Firebase('https://tictactoekevin.firebaseio.com/counter');
+  var counterRef= new Firebase('https://tictactoekevin.firebaseio.com/counter');
   //Create AngularFire reference to data
   var counterSync = $firebase(counterRef);
   //download the data into an array
-  $scope.counter=counterSync.$asArray();
+  $scope.counter= counterSync.$asArray();
+
+
+  var winRef=new Firebase('https://tictactoekevin.firebaseio.com/win');
+  //Create AngularFire reference to data
+  var winSync = $firebase(winRef);
+  //download the data into an array
+  $scope.win=winSync.$asArray();
+
+   var playerRef=new Firebase('https://tictactoekevin.firebaseio.com/player');
+  //Create AngularFire reference to data
+  var playerSync = $firebase(playerRef);
+  //download the data into an array
+  $scope.players=playerSync.$asArray();
+
+
 
   //initialize board to empty strings
   //$scope.board=['','','','','','','','',''] //old way of initializing the board
@@ -36,27 +51,123 @@ tttApp.controller('tttController', function($scope,$firebase){
   });
 
   $scope.counter.$loaded(function(){
-    console.log('Counter length: ' +$scope.counter.length);
-    if ($scope.counter.length==0){ //creates counter variable if it doesn't already exist
-      $scope.counter.$add({numMoves: 0})
-      console.log('Went into if scope counter length = 0.');
-    }else{ //updates counter variable if it already exists in database
+    if($scope.counter.length==0){ //creates counter variable if it doesn't already exist
+      $scope.counter.$add({numMoves: 0});
+    }
+    else if($scope.counter[0].numMoves < 0){
+      $scope.counter[0].numMoves = 0;
+      $scope.counter.$save(0);
+    }
+    else{ //updates counter variable if it already exists in database
       $scope.counter[0].numMoves=0;
       $scope.counter.$save(0); //saves first element in counter
     }
 
   });
 
-$scope.makeMove=function(idx){
-  console.log('going into makeMove function: ');
-  console.log('square clicked(index): '+idx)
-  $scope.board[idx].playerMove='x';
-  $scope.board.$save($scope.board[idx]);
-  //console.log(' Current scope counter = ' + $scope.counter[0].numMoves);
-    $scope.counter[0].numMoves++;
-    $scope.counter.$save(0); //saves first element in counter
-    console.log('Counter incremented in makeMove function. numMoves counter = ' + $scope.counter[0].numMoves);
+$scope.win.$loaded(function(){
+    if($scope.win.length == 0){
+    $scope.win.$add({message: ""});
+  } else{
+    $scope.win[0].message = "";
+    $scope.win.$save(0);
   }
+
+});
+
+$scope.players.$loaded(function(){
+  if($scope.players.length == 0){
+    $scope.players.$add({playerOne: false, playerTwo: true});
+  }
+  else{
+    $scope.players[0].playerOne = false;
+    $scope.players[0].playerTwo = true;
+    $scope.players.$save(0);
+  }
+
+});
+
+function displayWinner(player){
+  if(player == "X" ){
+    $scope.win[0].message = "Player one Wins";
+    $scope.win.$save(0);
+  }
+  else if(player == "O"){
+    $scope.win[0].message = "player 2 wins";
+  }
+    $scope.win.$save(0);
+    $scope.counter[0].makeMove= -2;
+    $scope.counter.$save(0);
+};
+
+
+
+
+
+
+
+
+
+$scope.makeMove = function(index){
+
+
+  if(($scope.board[0].playerMove == "") && ($scope.board[1].playerMove == "") && ($scope.board[2].playerMove == "") &&
+      ($scope.board[3].playerMove == "") && ($scope.board[4].playerMove == "") && ($scope.board[5].playerMove == "") &&
+      ($scope.board[6].playerMove == "") && ($scope.board[7].playerMove == "") && ($scope.board[8].playerMove == "")){
+      $scope.players[0].playerOne = true;
+      $scope.players[0].playerTwo = false;
+    }
+
+    console.log("player 1 is " + $scope.players[0].playerOne);
+    console.log("player 2 is " + $scope.players[0].playerTwo);
+
+    if(($scope.board[index].playerMove == "") && ($scope.counter[0].numMoves >= 0)) {
+        console.log("going through makeMove");
+        console.log("turn = " + $scope.counter[0].numMoves);
+
+      if((($scope.counter[0].numMoves % 2) == 0) && ($scope.players[0].playerOne == true)){
+        var symbol = "X";
+
+        $scope.board[index].playerMove = symbol; 
+        $scope.board.$save($scope.board[index]);
+        $scope.counter[0].numMoves++;
+        $scope.counter.$save(0);
+      }
+        else if((($scope.counter[0].numMoves % 2) == 1) && ($scope.players[0].playerTwo == true)){
+        var symbol = "O";
+
+        $scope.board[index].playerMove = symbol; 
+        $scope.board.$save($scope.board[index]);
+        $scope.counter[0].numMoves++;
+        $scope.counter.$save(0);
+      }
+
+
+    }
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+// $scope.makeMove=function(idx){
+//   console.log('going into makeMove function: ');
+//   console.log('board clicked(index): '+idx)
+//   $scope.board[idx].playerMove='x';
+//   $scope.board.$save($scope.board[idx]);
+//   //console.log(' Current scope counter = ' + $scope.counter[0].numMoves);
+//     $scope.counter[0].numMoves++;
+//     $scope.counter.$save(0); //saves first element in counter
+//     console.log('Counter incremented in makeMove function. numMoves counter = ' + $scope.counter[0].numMoves);
+//   }
 
 
 });
