@@ -13,34 +13,21 @@ header{
 h1>img{
  width: 100px;
 }
-/********************************************/
-/*  Styling for the text showing whose turn */
-/*  it is                                   */
-/********************************************/
-#playerTurn{
- margin: 0 auto;
+
+/*========================================*/
+/*Title Area*/
+/*========================================*/
+
+#title{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	color: rgba(255, 255, 255, 0.8);
 }
-.currentTurn{
- font-weight: bold;
- color: #342A14;
-/* background-image: url('../images/driftwood2.png');
- background-size: 80px 20px;
- background-repeat: no-repeat;*/
-}
-.notCurrentTurn{
- color: lightgray;
-}
-.driftwood{
- width: 80px;
- height: 20px;
-}
-/*div.notCurrentTurn>img{
-  visibility: hidden;
-}*/
-/********************************************/
-/*  Styling for game board and individual   */
-/*  squares                                 */
-/********************************************/
+
+/*========================================*/
+/*Game board*/
+/*========================================*/
 #ticTacToeBoard{
  height: 350px;
  width: 350px;
@@ -57,64 +44,37 @@ h1>img{
  float: left;
  margin: 5px;
  border-radius: 5%;
- border: 1px solid black;
- background-image: url('../images/wood_grain3.jpg');
+ /*border: 1px solid black;*/
  background-size: contain;
+ background-color: rgba(255, 255, 255, 0.6);
 }
 /*Applied on mouseout*/
 .blue{
  /*background-color: blue;*/
  opacity: 0.5;
 }
-/********************************************/
-/*Styling for margins of tic tac toe squares*/
-/********************************************/
-.left{
- margin-left:0px;
-}
-.right{
- margin-right:0px;
-}
-.top{
- margin-top: 0px;
-}
-.bottom{
- margin-bottom: 0px;
+/*==============Hover effect==========*/
+.hoverEffect {
+     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/********************************************/
-/*Styling for x or o class. Class depends on*/
-/*which player clicked the tic tac to square*/
-/********************************************/
-.gameBoardSquare{
- width: 100%;
-}
-/*Styling for when a board piece is taken*/
-div.taken{
- opacity: 1;
-}
-/*Styling for div that shows announcement of winner*/
-#winnerIdentity{
- color: white;
- margin: 0px auto;
- text-align: center;
- z-index: 100;
- position: relative;
- top: 100px;
- background-color: #E9A656;
- width: 400px;
-}
-#winnerIdentityDiv{
- height: 0px;
+/*========================================*/
+/*Background*/
+/*========================================*/
+
+#video-bg {
+position: fixed;
+right: 0;
+bottom: 0;
+width: auto;
+min-width: 100%;
+height: auto;
+min-height: 100%;
+z-index: -100;
+background: transparent url(video-bg.jpg) no-repeat;
+background-size: cover;
 }
 
-/*Styling for div that contains 'Play again button'*/
-#playerTurn {
- margin: 0 auto;
-}
-/*Styling for image that shows play again button */
-#playAgainImage{
- margin: 0 auto;
- display: none;
- width: 200px;
-}
+/*========================================*/
+/*Background*/
+/*========================================*/

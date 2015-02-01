@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
- <title></title>
+  <head>
+
+    <title>Tic Tac Toe</title>
+    <!-- Style / angular.min.js -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-angular.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-
     <script src="angular.min.js"></script>
-
-
- <!-- Firebase -->
+    <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/0.9.1/angularfire.min.js"></script>
-
+    <!-- javascript / font -->
     <script src="java.js"></script>
-</head>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  </head>
 
+<!-- video -->
+    <video autoplay loop muted id="video-bg">
+      <source src="citybg.webm" type="video/webm">
+      <source src="citybg.mp4" type="video/mp4">
+    </video>
 
-<body ng-app='tttApp' ng-controller='tttController'>
- <div id="container">
-   <!-- Creates board -->
-   <div class="tiles"
-     ng-repeat="gamePiece in board track by $index"
-     ng-class='{square:true, xSelected:gamePiece=="x", oSelected:gamePiece=="o"}'
-     ng-click='makeMove($index)'
-     ng-bind='gamePiece.playerMove'
-     >
-   </div> 
-   <!-- ^End div that creates board -->
-</div>
-</body>
+<!-- Board and Tiles -->
+  <body ng-app='tttApp' ng-controller='tttController'>
+    <h1 id="title">Tic-Tac-Toe</h1>
+     <div id="container">
+       <!-- Creates board -->
+       <div class="tiles"
+         ng-repeat="gamePiece in board track by $index"
+         ng-class='{square:true, hoverEffect: hover}'
+         ng-click='makeMove($index)'
+         ng-bind='gamePiece.playerMove'
+
+     ng-mouseenter="hover = true"
+     ng-mouseleave="hover = false"
+         >
+       </div> 
+       <!-- ^End div that creates board -->
+    </div>
+  </body>
+
 </html>
