@@ -6,6 +6,7 @@
     <!-- Style / angular.min.js -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-angular.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito|Advent+Pro:200' rel='stylesheet' type='text/css'>
     <script src="angular.min.js"></script>
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
@@ -13,7 +14,7 @@
     <script src="https://cdn.firebase.com/libs/angularfire/0.9.1/angularfire.min.js"></script>
     <!-- javascript / font -->
     <script src="java.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+
   </head>
 
 <!-- video -->
@@ -32,9 +33,8 @@
          ng-class='{square:true, hoverEffect: hover}'
          ng-click='makeMove($index)'
          ng-bind='gamePiece.playerMove'
-
-     ng-mouseenter="hover = true"
-     ng-mouseleave="hover = false"
+         ng-mouseenter="hover = true"
+         ng-mouseleave="hover = false"
          >
        </div> 
        <!-- ^End div that creates board -->

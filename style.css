@@ -20,8 +20,9 @@ h1>img{
 
 #title{
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Advent Pro', sans-serif;
 	font-size: 5em;
+	font-weight: 100;
 	color: rgba(255, 255, 255, 0.8);
 }
 
@@ -48,11 +49,7 @@ h1>img{
  background-size: contain;
  background-color: rgba(255, 255, 255, 0.6);
 }
-/*Applied on mouseout*/
-.blue{
- /*background-color: blue;*/
- opacity: 0.5;
-}
+
 /*==============Hover effect==========*/
 .hoverEffect {
      background-color: rgba(255, 255, 255, 0.05);
@@ -75,6 +72,6 @@ background: transparent url(video-bg.jpg) no-repeat;
 background-size: cover;
 }
 
-/*========================================*/
-/*Background*/
-/*========================================*/
+
+
+

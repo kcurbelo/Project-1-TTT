@@ -15,7 +15,10 @@ header{
 	width:100px;
 	height: 100px;
 	float: left; /*Don't delete this! Keeps the squares from moving around*/
-	color: purple;
+    /*Text color*/
+    font-family: 'Advent Pro', sans-serif;
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 75px;
 	text-align: center;
 	border-radius: 20%;
 
@@ -25,49 +28,7 @@ header{
 	width:100px;
 	border:0px;
 }
-#winnerIdentity{
-	color: white;
-	margin: 0px auto;
-	text-align: center;
-	z-index: 100;
-	position: relative;
-	top: 100px;
-	background-color: #E9A656;
-	width: 400px;
-}
-#winnerIdentityDiv{
-	height: 0px;
-}
 
-.currentTurn{
-	font-weight: bold;
-	color: #342A14;
-}
-.notCurrentTurn{
-	color: lightgray;
-}
+/*Add media hide video so that way video doesnt load or autoplay on smaller screens*/
+/*Test to make sure it works across all platforms*/
 
-/*Styling for image that shows play again button */
-#playAgainImage{
-	margin: 0 auto;
-	width: 200px;
-}
-.driftwood{
-	width: 80px;
-	height: 20px;
-}
-
-/*========================================*/
-/*Hover Effect */
-/*========================================*/
-.lowlight {
-    padding: 10px;
-    background: blue;
-    color: white;
-}
-
-.highlight {
-    padding: 10px;
-    background: red;
-    color: white;
-}
