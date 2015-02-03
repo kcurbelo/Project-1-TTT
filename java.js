@@ -149,6 +149,7 @@ $scope.makeMove = function(index){
         $scope.counter[0].numMoves++; //Increment the number of moves by one
         $scope.counter.$save(0); //Save the counter
         checkWinX();
+        gameEnd();
       }
         else if((($scope.counter[0].numMoves % 2) == 1) && ($scope.players[0].playerTwo == true)){
         var symbol = "O";
@@ -158,6 +159,7 @@ $scope.makeMove = function(index){
         $scope.counter[0].numMoves++;
         $scope.counter.$save(0);
         checkWinO();
+        gameEnd();
       }
 
    }
@@ -199,9 +201,6 @@ $scope.makeMove = function(index){
           if($scope.board[2].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[6].playerMove == "X"){
             alert("Winner")//Left to right diagonal win
           }
-          if($scope.counter[0].numMoves = 9);{
-            window.location.reload();
-          } 
 
 
       };
@@ -233,6 +232,13 @@ $scope.makeMove = function(index){
             alert("Winner")//Left to right diagonal win
           }
       };
+
+
+      function gameEnd() {
+        if($scope.counter[0].numMoves == 9) {
+          window.location.reload();
+        }
+      }
 });
 
 
