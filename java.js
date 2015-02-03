@@ -157,7 +157,7 @@ $scope.makeMove = function(index){
         $scope.board.$save($scope.board[index]);
         $scope.counter[0].numMoves++;
         $scope.counter.$save(0);
-        checkWin();
+        checkWinO();
       }
 
    }
@@ -178,37 +178,61 @@ $scope.makeMove = function(index){
           if($scope.board[0].playerMove == "X" && $scope.board[1].playerMove == "X" && $scope.board[2].playerMove == "X"){
             alert("Winner")//Top horizontal win
           }
-          else if($scope.board[3].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[5].playerMove == "X"){
+          if($scope.board[3].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[5].playerMove == "X"){
             alert("Winner")//Middle horizontal win
           }
-          else if($scope.board[6].playerMove == "X" && $scope.board[7].playerMove == "X" && $scope.board[8].playerMove == "X"){
+          if($scope.board[6].playerMove == "X" && $scope.board[7].playerMove == "X" && $scope.board[8].playerMove == "X"){
             alert("Winner")//Bottom horizontal win
           }
-          else if($scope.board[0].playerMove == "X" && $scope.board[3].playerMove == "X" && $scope.board[6].playerMove == "X"){
+          if($scope.board[0].playerMove == "X" && $scope.board[3].playerMove == "X" && $scope.board[6].playerMove == "X"){
             alert("Winner")//Left vertical win
           }
-          else if($scope.board[1].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[7].playerMove == "X"){
+          if($scope.board[1].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[7].playerMove == "X"){
             alert("Winner")//Middle vertical win
           }
-          else if($scope.board[2].playerMove == "X" && $scope.board[5].playerMove == "X" && $scope.board[8].playerMove == "X"){
+          if($scope.board[2].playerMove == "X" && $scope.board[5].playerMove == "X" && $scope.board[8].playerMove == "X"){
             alert("Winner")//Right vertical win
           }
-          else if($scope.board[0].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[8].playerMove == "X"){
+          if($scope.board[0].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[8].playerMove == "X"){
             alert("Winner")//Right to left diagonal win
           }
-          else if($scope.board[2].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[6].playerMove == "X"){
+          if($scope.board[2].playerMove == "X" && $scope.board[4].playerMove == "X" && $scope.board[6].playerMove == "X"){
             alert("Winner")//Left to right diagonal win
           }
+          if($scope.counter[0].numMoves = 9);{
+            window.location.reload();
+          } 
+
 
       };
-          //Top Horizontal Win ===========================================
 
-        // function checkWin() {
-        //   if($scope.board[0].playerMove == "X"){
-        //       alert("sadsd");
-        //   }
-        // };
+          function checkWinO() {
 
+          if($scope.board[0].playerMove == "O" && $scope.board[1].playerMove == "O" && $scope.board[2].playerMove == "O"){
+            alert("Winner")//Top horizontal win
+          }
+          if($scope.board[3].playerMove == "O" && $scope.board[4].playerMove == "O" && $scope.board[5].playerMove == "O"){
+            alert("Winner")//Middle horizontal win
+          }
+          if($scope.board[6].playerMove == "O" && $scope.board[7].playerMove == "O" && $scope.board[8].playerMove == "O"){
+            alert("Winner")//Bottom horizontal win
+          }
+          if($scope.board[0].playerMove == "O" && $scope.board[3].playerMove == "O" && $scope.board[6].playerMove == "O"){
+            alert("Winner")//Left vertical win
+          }
+          if($scope.board[1].playerMove == "O" && $scope.board[4].playerMove == "O" && $scope.board[7].playerMove == "O"){
+            alert("Winner")//Middle vertical win
+          }
+          if($scope.board[2].playerMove == "O" && $scope.board[5].playerMove == "O" && $scope.board[8].playerMove == "O"){
+            alert("Winner")//Right vertical win
+          }
+          if($scope.board[0].playerMove == "O" && $scope.board[4].playerMove == "O" && $scope.board[8].playerMove == "O"){
+            alert("Winner")//Right to left diagonal win
+          }
+          if($scope.board[2].playerMove == "O" && $scope.board[4].playerMove == "O" && $scope.board[6].playerMove == "O"){
+            alert("Winner")//Left to right diagonal win
+          }
+      };
 });
 
 
