@@ -236,6 +236,7 @@ $scope.makeMove = function(index){
 
       function gameEnd() {
         if($scope.counter[0].numMoves == 9) {
+          alert("Tie game!")
           window.location.reload();
         }
       }
