@@ -1,4 +1,4 @@
-// Major, major, major, major, props to Wendy, Sam, and Bo. A large portion of the code for this project is a combination of their work. 
+// Major, major, major, major, props to Wendy, Sam, and Bo. A large portion of the code (aside from win logic) for this project is a combination of their work. 
 
 var tttApp = angular.module('tttApp',['firebase']);
 
